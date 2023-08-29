@@ -1,0 +1,379 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.tab_images {
+    height: 50px !important;
+}
+.center {
+    text-align: center !important;
+}
+.right {
+    text-align: right !important;
+}
+.left {
+    text-align: left !important;
+}
+.center_box {
+    margin: auto;
+    display: table;
+}
+.padding_l_15 {
+    padding-left: 15px;
+}
+.margin_t_3 {
+    margin-top: 3px !important;
+}
+.margin_t_5 {
+    margin-top: 5px !important;
+}
+.margin_t_10 {
+    margin-top: 10px !important;
+}
+.margin_t_15 {
+    margin-top: 15px !important;
+}
+.margin_t_20 {
+    margin-top: 20px !important;
+}
+.margin_t_25 {
+    margin-top: 25px !important;
+}
+.margin_t_30 {
+    margin-top: 30px !important;
+}
+.margin_t_35 {
+    margin-top: 35px !important;
+}
+.margin_t_40 {
+    margin-top: 40px !important;
+}
+.margin_t_50 {
+    margin-top: 50px !important;
+}
+.margin_t_60 {
+    margin-top: 60px !important;
+}
+.margin_t_80 {
+    margin-top: 80px !important;
+}
+.margin_t_90 {
+    margin-top: 90px !important;
+}
+.margin_b_10 {
+    margin-bottom: 10px !important;
+}
+.margin_b_20 {
+    margin-bottom: 20px !important;
+}
+.boxshadow_none {
+    box-shadow: none !important;
+}
+.ht_5 {
+    height: 5px !important;
+}
+.ht_10 {
+    height: 10px !important;
+}
+.ht_15 {
+    height: 15px !important;
+}
+.ht_20 {
+    height: 20px !important;
+}
+.ht_25 {
+    height: 25px !important;
+}
+.ht_30 {
+    height: 30px !important;
+}
+.ht_40 {
+    height: 40px !important;
+}
+.ht_47 {
+    height: 47px !important;
+}
+.ht_50 {
+    height: 50px !important;
+}
+.ht_60 {
+    height: 60px !important;
+}
+.ht_70 {
+    height: 70px !important;
+}
+.ht_75 {
+    height: 75px !important;
+}
+.ht_80 {
+    height: 80px !important;
+}
+.ht_85 {
+    height: 85px !important;
+}
+.ht_90 {
+    height: 90px !important;
+}
+.ht_100 {
+    height: 100px !important;
+}
+.ht_120 {
+    height: 120px !important;
+}
+.ht_150 {
+    height: 150px !important;
+}
+.ht_160 {
+    height: 160px !important;
+}
+.ht_180 {
+    height: 180px !important;
+}
+.ht_200 {
+    height: 200px !important;
+}
+.ht_220 {
+    height: 220px !important;
+}
+.ht_250 {
+    height: 250px !important;
+}
+.font12 {
+    font-size: 12px !important;
+}
+.font15 {
+    font-size: 15px !important;
+}
+.font20 {
+    font-size: 20px !important;
+}
+.font_20 {
+    font-size: 20px !important;
+}
+.font_25 {
+    font-size: 25px !important;
+}
+.font_30 {
+    font-size: 30px !important;
+}
+.font_35 {
+    font-size: 35px !important;
+}
+.font50 {
+    font-size: 50px !important;
+}
+.bg_clr {
+    background: linear-gradient(to left, #005856 0%, #005074 100%);
+}
+.lh20 {
+    line-height: 20px !important;
+}
+.floatr {
+    float: right !important;
+}
+.row_75{
+    width: 75%;
+    margin: auto;
+}
+.row_90{
+    width: 90%;
+    margin: auto;
+}
+//=================================================================================================================
+
+.header-ios {
+    padding-top: 18px;
+}
+
+.content-md {
+    background-color: #000000;
+    color:#ffffff;
+}
+
+.Heder_center {
+    padding-top: 18px;
+    --background: #000000;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+ion-toolbar {
+    --background: #000000;
+    color: #ffffff;
+}
+
+.vertical_centr {
+      -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    color:#ffffff;
+    height: 100%;
+    padding: 0px 20px;
+}
+.loginContentBack {
+  background: #1a1e23;
+  margin: 0;
+}
+$bubble-count: 50;
+$sway-type: "sway-left-to-right", "sway-right-to-left";
+
+@function random_range($min, $max) {
+  $rand: random();
+  $random_range: $min + floor($rand * (($max - $min) + 1));
+  @return $random_range;
+}
+
+@function sample($list) {
+  @return nth($list, random(length($list)));
+}
+
+.bubbles {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index:1;
+}
+
+.bubble {
+  position: absolute;
+  left: var(--bubble-left-offset);
+  bottom: -75%;
+  display: block;
+  width: var(--bubble-radius);
+  height: var(--bubble-radius);
+  border-radius: 50%;
+  animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(183, 94%, 76%, 0.3);
+    border-radius: inherit;
+    animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
+  }
+
+  @for $i from 0 through $bubble-count {
+    &:nth-child(#{$i}) {
+      --bubble-left-offset: #{random_range(0vw, 100vw)};
+      --bubble-radius: #{random_range(1vw, 10vw)};
+      --bubble-float-duration: #{random_range(6s, 12s)};
+      --bubble-sway-duration: #{random_range(4s, 6s)};
+      --bubble-float-delay: #{random_range(0s, 4s)};
+      --bubble-sway-delay: #{random_range(0s, 4s)};
+      --bubble-sway-type: #{sample($sway-type)};
+    }
+  }
+}
+
+@keyframes float-up {
+  to {
+    transform: translateY(-175vh);
+  }
+}
+
+@keyframes sway-left-to-right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes sway-right-to-left {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+.contentback {
+    background: #000000;
+    --background: #000000;
+    color:#ffffff;
+}
+.headingtxt{
+    color:#ffffffd0;
+    font-size:14px;
+    font-weight: bold;
+}
+.viewtxt {
+  color: #38C1F0;
+  font-size: 12px;
+  text-align: right;
+}
+.footerrow{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+.footericn{
+    color:#9c9c9ccb;
+}
+.footertxt{
+    font-size: 10px;
+    color:#9c9c9ccb;
+}
+.selectfootericn {
+  text-align: center;
+  color: #38C1F0;
+}
+.selectfootertxt {
+  font-size: 10px;
+  color: #38C1F0;
+}
+.btnclass {
+  width: 90%;
+  margin: auto;
+  display: table;
+  --background: #38C1F0;
+  border-radius: 25px;
+  --border-radius: 25px;
+  color: #ffffff;
+  height: 50px;
+  font-size: 18px;
+}
+.half-modal .modal-wrapper{
+    height: 60%;
+    top: 40%;
+    position: absolute;
+    display: block;
+    --border-radius: 20px 20px 0px 0px;
+  }
+

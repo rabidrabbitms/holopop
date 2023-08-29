@@ -1,0 +1,39 @@
+.inputdiv {
+    background-color: #000000;
+    border-radius: 25px;
+    color: rgb(196, 196, 196);
+    border: 1px solid rgb(151, 151, 151);
+    width: 90%;
+    position: relative;
+    margin:auto;
+    height:50px;
+}
+.loginicn{
+    position: absolute;
+    top:10px;
+    left:15px;
+    font-size:20px;
+    color: gray;
+}
+.inputbox{
+    position: absolute;
+    // top:5px;
+    margin-top: 3px;
+    left:40px;
+    // font-size:20px;
+}
+.forgottxt{
+    text-align: center;
+    text-decoration: underline;
+    color:gray;
+    font-size: 14px;
+}
+.moretxt{
+    text-align: center;
+    color:gray;
+    font-size: 14px;
+    span{
+        color:#ffffffe2;
+        text-decoration: underline;
+    }
+}

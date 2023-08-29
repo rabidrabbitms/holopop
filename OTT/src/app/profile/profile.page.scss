@@ -1,0 +1,32 @@
+.profilerow{
+    background-color: #222222;
+    border-radius: 10px;
+    text-align: center;
+    color:rgb(179, 179, 179);
+}
+.profileimg{
+    width:100px;
+    margin: auto;
+    display: table;
+    border-radius: 8px;
+}
+.premiumrow{
+    background: linear-gradient(to bottom, #151515 5%, #24275b 100%);
+    border-radius: 8px;
+    color:#ffffff;
+    border:1px solid rgba(128, 128, 128, 0.385);
+}
+.crownimg{
+    margin: auto;
+    display: table;
+    margin-top:5px;
+}
+.optionrow{
+    width: 100%;
+    border-top:1px solid rgba(110, 110, 110, 0.587);
+    border-bottom:1px solid rgba(110, 110, 110, 0.73);
+    border-collapse: collapse;
+    padding:10px 0px;
+    color:#ffffff;
+    font-weight: bold;
+}

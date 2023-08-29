@@ -1,0 +1,83 @@
+<ion-header class="Heder_center">
+  <ion-toolbar>
+    <ion-row style="width: 90%;margin:auto">
+      <ion-col size="1" style="margin: auto;">
+        <ion-icon name="arrow-back-outline" style="zoom: 2;" (click)="back()"></ion-icon>
+      </ion-col>
+      <ion-col style="margin: auto;">
+        <div>Favorite</div>
+      </ion-col>
+      <ion-col size="1" style="margin: auto;"> <span style="font-size:30px;">&#9734;</span></ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentback">
+  <div class="ht_10"></div>
+  <div class="vertical_centr">
+    <ion-row>
+      <ion-col size="12">
+        <ion-row>
+        <img src="assets/imgs/project.jpg" style="border-radius: 6px;width: 100%;">
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <div class="subheading">Release Date 05 Feb</div>
+            <div class="ht_5"></div>
+            <div>Project Power</div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="12">
+        <ion-row>
+          <img src="assets/imgs/spensercover.jpg" style="border-radius: 6px;width: 100%;">
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <div class="subheading">Release Date 05 Feb</div>
+              <div class="ht_5"></div>
+              <div>Spenser Confidential</div>
+            </ion-col>
+          </ion-row>
+      </ion-col>
+      <ion-col size="12">
+        <ion-row>
+          <img src="assets/imgs/outsidewire.jpg" style="border-radius: 6px;width: 100%;">
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <div class="subheading">Release Date 05 Feb</div>
+              <div class="ht_5"></div>
+              <div>Outside the Wire</div>
+            </ion-col>
+          </ion-row>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<ion-footer linse="none">
+  <div class="ht_20"></div>
+  <ion-row class="footerrow">
+    <ion-col class="ion-no-padding" (click)="home()">
+      <ion-icon name="home-outline" class="footericn"></ion-icon>
+      <div class="footertxt">Home</div>
+    </ion-col>
+    <ion-col class="ion-no-padding" (click)="search()">
+      <ion-icon name="search-outline" class="footericn"></ion-icon>
+      <div class="footertxt">Serach</div>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <ion-icon name="play-circle" class="selectfootericn"></ion-icon>
+      <div class="selectfootertxt">Upcoming</div>
+    </ion-col>
+    <ion-col class="ion-no-padding" (click)="download()">
+      <ion-icon name="download-outline" class="footericn"></ion-icon>
+      <div class="footertxt">Download</div>
+    </ion-col>
+    <ion-col class="ion-no-padding" (click)="profile()">
+      <ion-icon name="person-outline" class="footericn"></ion-icon>
+      <div class="footertxt">Profile</div>
+    </ion-col>
+  </ion-row>
+  <div class="ht_15"></div>
+</ion-footer>

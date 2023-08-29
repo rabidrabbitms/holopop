@@ -1,0 +1,91 @@
+<ion-header class="Heder_center">
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size="1" >
+        <ion-icon name="arrow-back-outline" (click)="back()" style="zoom: 2;"></ion-icon>
+      </ion-col>
+      <ion-col style="margin: auto;">
+        <div>Registration</div>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contentback">
+  <ion-row style="margin: auto;width: 90%;">
+    <ion-col style="margin: auto;text-align: center;">
+      <img src="assets/imgs/icon.png" style="height: 200px;width:auto;">
+    </ion-col>
+</ion-row>
+    <div class="ht_15"></div>
+    <div class="vertical_centr">
+      <ion-row class="googlerow">
+        <ion-col size="2.5">
+          <img src="assets/imgs/googleplus.png" style="margin: auto;display: table;">
+        </ion-col>
+        <ion-col size="9.5">
+          <div style="height: 10px;"></div>
+          <div>Connect with Google</div>
+        </ion-col>
+      </ion-row>
+      <div class="ht_15"></div>
+      <ion-row class="fbrow">
+        <ion-col size="2.5">
+          <img src="assets/imgs/facebook.png" style="margin: auto;display: table;">
+        </ion-col>
+        <ion-col size="9.5">
+          <div style="height: 10px;"></div>
+          <div>Connect with Facebook</div>
+        </ion-col>
+      </ion-row>
+      <div class="ht_40"></div>
+      <ion-row>
+        <ion-col size="5">
+          <div class="hrdiv"></div>
+        </ion-col>
+        <ion-col>
+          <div class="center" style="color:rgb(110, 110, 110)">Or</div>
+        </ion-col>
+        <ion-col size="5">
+          <div class="hrdiv"></div>
+        </ion-col>
+        <ion-col size="12">
+          <div class="ht_10"></div>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon name="person-outline" class="logoicn"></ion-icon>
+        </ion-col>
+        <ion-col size="10">
+          <ion-input style="border-bottom:1px solid gray" placeholder="Username"></ion-input>
+        </ion-col>
+
+        <ion-col size="2">
+          <ion-icon name="mail-outline" class="logoicn"></ion-icon>
+        </ion-col>
+        <ion-col size="10">
+          <ion-input style="border-bottom:1px solid gray" placeholder="Email"></ion-input>
+        </ion-col>
+
+        <ion-col size="2">
+          <ion-icon name="lock-closed-outline" class="logoicn"></ion-icon>
+        </ion-col>
+        <ion-col size="10">
+          <ion-input style="border-bottom:1px solid gray" placeholder="Password"></ion-input>
+        </ion-col>
+        <ion-col size="12">
+          <div class="ht_15"></div>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button class="btnclass" (click)="signin()">Sign Up</ion-button>
+          <div class="ht_10"></div>
+        </ion-col>
+        <ion-col size="12">
+          <div class="moretxt">Already have an account?</div>
+          <div class="ht_20"></div>
+          <div class="spandiv" (click)="signin()">Sign In Now</div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+</ion-content>

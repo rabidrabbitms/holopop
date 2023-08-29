@@ -1,0 +1,63 @@
+.gender{
+    margin: auto;
+    color: white;
+    border: 1px solid rgb(137, 138, 85);    
+    border-radius: 12px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+}
+.update2{
+    width: 85%;
+    margin: auto;
+    display: table;
+    --background: gray;
+    border-radius: 25px;
+    --border-radius: 25px;
+    color: #ffffff;
+    height: 50px;
+    font-size: 18px;
+}
+.update1{
+    width: 85%;
+    margin: auto;
+    display: table;
+    --background: rgb(137, 138, 85);  
+    border-radius: 25px;
+    --border-radius: 25px;
+    color: #ffffff;
+    height: 50px;
+    font-size: 18px;
+}
+ion-item{
+    background: black;
+}
+.iconw{
+    color:white;
+    margin: auto;
+    zoom: 1.5;
+}
+.iconb{
+    color:black;
+    margin: auto;
+}
+.deactiv{
+    border-bottom:1px solid rgb(137, 138, 85);
+    font-size: 14px;
+    color: white;
+}
+.activ{
+    border-bottom:1px solid rgb(204, 207, 30);
+    font-size: 14px;
+    color: white;
+}
+
+.activg{
+    margin: auto;
+    color: white;
+    border: 1px solid rgb(204, 207, 30);
+    border-radius: 12px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+}

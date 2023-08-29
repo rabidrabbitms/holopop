@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { registerPlugin } from '@capacitor/core';\nconst VideoRecorder = registerPlugin('VideoRecorder', {\n  web: () => import('./web').then(m => new m.VideoRecorderWeb())\n});\nexport * from './definitions';\nexport { VideoRecorder };\n//# sourceMappingURL=index.js.map","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

@@ -1,0 +1,42 @@
+.sldimg{
+   width: 200px;
+     height:100px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    // max-height: 105px;
+}
+.ifarm{
+    z-index: 1;
+}
+.ionslide{
+    z-index: 3;
+}
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    // max-height: 105px;
+}
+
+
+.icondiv{
+    position: absolute;
+    top: 14px;
+    left: 0%;
+    right: 67%;
+    margin: auto;
+    display: table;
+    color: white;
+}
+#segfnt{
+    text-align: center;
+  }
+  .border{
+    border:1px solid rgb(212, 29, 29);
+    width: 80%;
+    margin: auto;
+  }

@@ -1,0 +1,68 @@
+<!--<app-header></app-header>-->
+<ion-content class="contentback">
+  <div class="ht_10"></div>
+  <div class="vertical_centr">
+    <ion-row>
+      <ion-col size="12">
+        <swiper-container [options]="slideOpts">
+          <swiper-slide (click)="category('1')">
+            <ion-text>Libary</ion-text>
+            <div [ngClass]="(showcategory == '1')?'selectcategory':'categorydiv'">
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <div class="headingtxt">Recieved Cards</div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="viewtxt" (click)="view('recieve')">View all</div>
+      </ion-col>
+      <ion-col size="12">
+        <swiper-container [options]="actionslideOpt">
+          <swiper-slide (click)="clickshow()">
+            <img src="assets/imgs/kind.jpg" class="actionimg">
+          </swiper-slide>
+        </swiper-container>
+      </ion-col>
+      <ion-col size="12">
+        <div class="ht_10"></div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="headingtxt">Sent Cards</div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="viewtxt" (click)="view('sent')">View all</div>
+      </ion-col>
+      <ion-col size="12">
+        <swiper-container [options]="actionslideOpt">
+          <swiper-slide (click)="clickshow()">
+            <img src="assets/imgs/super.jpg" class="actionimg">
+          </swiper-slide>
+        </swiper-container>
+      </ion-col>
+    </ion-row>
+    <div class="ht_10"></div>
+  </div>
+</ion-content>
+
+<ion-footer linse="none">
+  <div class="ht_20"></div>
+  <ion-row class="footerrow">
+    <ion-col class="ion-no-padding">
+      <ion-icon name="home" class="selectfootericn"></ion-icon>
+      <div class="selectfootertxt">Home</div>
+    </ion-col>
+    <ion-col class="ion-no-padding" (click)="search()">
+      <ion-icon name="camera-outline" class="footericn"></ion-icon>
+      <div class="footertxt">Scan QR</div>
+    </ion-col>
+    <ion-col class="ion-no-padding" (click)="upcome()">
+      <ion-icon name="pricetags-outline" class="footericn"></ion-icon>
+      <div class="footertxt">Card Shop</div>
+    </ion-col>
+  </ion-row>
+  <div class="ht_15"></div>
+</ion-footer>
