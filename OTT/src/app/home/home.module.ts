@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
-import { ComponentsModule } from  '../_components/components.module';
+import { HomePageRoutingModule } from './home-routing.module'; 
 import { HomePage } from './home.page';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 
@@ -14,7 +13,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     CommonModule,
     FormsModule,
     IonicModule,
-    ComponentsModule,
+    HomePageRoutingModule,
     NgCircleProgressModule.forRoot({
       radius: 100,
       outerStrokeWidth: 10,

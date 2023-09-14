@@ -2,30 +2,36 @@
   <ion-toolbar>
     <ion-row>
       <ion-col size="1">
-        <ion-icon name="arrow-back-outline" (click)="back()" style="zoom: 2;"></ion-icon>
+        <ion-icon name="chevron-back-outline" (click)="back()" style="zoom: 2;"></ion-icon>
       </ion-col>
       <ion-col style="margin: auto;">
         <div>Recieved Cards</div>
       </ion-col>
-      <ion-col size="1"><img src="assets/imgs/icon.png" style="width:auto;"></ion-col>
-    </ion-row>
+      <ion-col size="2" (click)="menu()">
+        <ion-icon style="zoom: 2;margin: auto;" name="reorder-three"></ion-icon>
+      </ion-col>    </ion-row>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="contentback">
   <div class="ht_10"></div>
   <div class="vertical_centr">
-    <ion-row>
-      <ion-col size="4">
-        <img src="assets/imgs/kind.jpg">
-      </ion-col>
-      <ion-col size="4">
-        <img src="assets/imgs/super.jpg">
-      </ion-col>
-      <ion-col size="4">
-        <img src="assets/imgs/hbrecord.jpg">
-      </ion-col>
+
+    <ion-col size="12">
+      <swiper-container [options]="actionslideOpt">
+        <swiper-slide>
+          <ion-row style="min-height:150px; max-height:200px;">
+            <ion-col (click)="clickcamera()" size="4" class="ion-justify-content-center" style="border: dashed; border-radius:25px; text-align: center; align-items: center; display: flex; flex-wrap: wrap; margin-right:8px;">
+              <ion-icon name="add-outline"></ion-icon>
+            </ion-col>
+            <ion-col (click)="clickshow()" size="4" class="ion-justify-content-center" style="border: 1px solid; border-radius: 25px; text-align: center; align-items: center; display: flex; flex-wrap: wrap; ">
+            <img src="assets/imgs/confetti.jpg" class="actionimg">
+            <ion-text style="margin-top:-4em;">From: J.Fuller Sent: 09/11/2023 </ion-text>
+    </ion-col>
     </ion-row>
+    </swiper-slide>
+    </swiper-container>
+    </ion-col>
   </div>
 
 </ion-content>

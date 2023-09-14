@@ -9,6 +9,14 @@ ion-searchbar{
     font-size: 12px;
     text-align: left;
 }
+.recbutton{
+    --background: #000000;
+    --border-radius:18px;
+    color:red;
+    --box-shadow:0px 0px 4px rgb(151, 151, 151);
+    height: 50px;
+    width: auto;
+}
 .hrdiv{
     height: 5px;
     width: 100%;

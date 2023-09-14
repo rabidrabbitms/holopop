@@ -8,7 +8,7 @@ import { AlertController, MenuController, ModalController, NavController } from 
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
-export class HomePage implements OnInit {
+export class HomePage {
 
   slideOpts = {
     initialSlide: 0,
@@ -36,11 +36,10 @@ export class HomePage implements OnInit {
       this.showcategory = '1'      
   }
 
-  ngOnInit() {
-    console.log("HomePage")
+
+  back() {
+    this.navctrl.back()
   }
-
-
 
   view(path) {
     switch (path) {
@@ -57,8 +56,13 @@ export class HomePage implements OnInit {
     this.showcategory = id
   }
 
+
+  menu() {
+    this.menubar.open()
+  }
+
   search(){
-    this.navctrl.navigateForward('/search')
+    this.navctrl.navigateForward('/camera')
   }
 
   download(){

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import { NavController,MenuController } from '@ionic/angular';
 import { DomSanitizer } from '@angular/platform-browser';
 @Component({
   selector: 'app-carddetails',
@@ -17,7 +17,7 @@ export class CardDetailsPage implements OnInit {
   
   new_url: any;
   iid: any;
-  constructor(public navctrl:NavController,public sanitizer: DomSanitizer,) { this.iid = 1;}
+  constructor(public navctrl: NavController, public sanitizer: DomSanitizer, public menubar: MenuController) { this.iid = 1;}
   ngOnInit() {
     this.new_url =  this.sanitizer.bypassSecurityTrustResourceUrl("http://www.youtube.com/embed/N9oxmRT2YWw")
   }
@@ -26,5 +26,24 @@ export class CardDetailsPage implements OnInit {
   }
   set(id) {
     this.iid = id;
+  }
+  menu() {
+    this.menubar.open()
+  }
+
+  search() {
+    this.navctrl.navigateForward('/search')
+  }
+
+  download() {
+    this.navctrl.navigateForward('/download')
+  }
+
+  upcome() {
+    this.navctrl.navigateForward('/upcoming')
+  }
+
+  profile() {
+    this.navctrl.navigateForward('/profile')
   }
 }

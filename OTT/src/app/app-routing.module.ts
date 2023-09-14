@@ -20,7 +20,7 @@ const routes: Routes = [
     loadChildren: () => import('./viewallsent/viewallsent.module').then(m => m.viewallsentPageModule)
   },
   {
-    path: 'search',
+    path: 'camera',
     loadChildren: () => import('./camera/camera.module').then( m => m.SearchPageModule)
   },
   {
@@ -40,10 +40,6 @@ const routes: Routes = [
     loadChildren: () => import('./carddetails/carddetails.module').then( m => m.CardDetailsPageModule)
   },
   {
-    path: 'favorite',
-    loadChildren: () => import('./favorite/favorite.module').then( m => m.FavoritePageModule)
-  },
-  {
     path: 'terms',
     loadChildren: () => import('./terms/terms.module').then( m => m.TermsPageModule)
   },
@@ -55,17 +51,10 @@ const routes: Routes = [
     path: 'myaccunt',
     loadChildren: () => import('./myaccunt/myaccunt.module').then( m => m.MyaccuntPageModule)
   },
-  {
-    path: 'tranhis',
-    loadChildren: () => import('./tranhis/tranhis.module').then( m => m.TranhisPageModule)
-  },
+
   {
     path: 'accountmanage',
     loadChildren: () => import('./accountmanage/accountmanage.module').then( m => m.AccountmanagePageModule)
-  },
-  {
-    path: 'viewoffer',
-    loadChildren: () => import('./viewoffer/viewoffer.module').then( m => m.ViewofferPageModule)
   }
 ];
 

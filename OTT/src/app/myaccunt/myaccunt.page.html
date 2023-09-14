@@ -21,7 +21,7 @@
   </ion-row>
   <ion-row style="width: 90%;margin: auto;" (click)="set('1')">
     <ion-col size="10" style="margin: auto;color: white;" [ngClass]="(iid=='1')?'activ':'deactiv'">
-      <ion-input [(ngModel)]="name">nikunj</ion-input>
+      <ion-input [(ngModel)]="name">John Fuller</ion-input>
     </ion-col>
     <ion-col [ngClass]="(iid=='1')?'activ':'deactiv'">
       <ion-icon class="iconw" (click)="clear('1')" *ngIf="iid != '1'" name="close-outline"></ion-icon>
@@ -50,36 +50,12 @@
   </ion-row>
   <ion-row style="width: 90%;margin: auto;" (click)="set('3')">
     <ion-col size="10" style="margin: auto;color: white;" [ngClass]="(iid=='3')?'activ':'deactiv'">
-      <ion-input [(ngModel)]="email" type="email">nikunjpagada197@gmail.com</ion-input>
+      <ion-input [(ngModel)]="email" type="email">jfuller@holopop.com</ion-input>
     </ion-col>
     <ion-col [ngClass]="(iid=='3')?'activ':'deactiv'">
       <ion-icon class="iconw" (click)="clear('3')"   *ngIf="iid != '3'" name="close-outline"></ion-icon>
     </ion-col>
-  </ion-row>
-  <div class="ht_5"></div>
-  <ion-row style="width: 90%;margin: auto;">
-    <ion-col size="12" style="margin: auto;color: gray;font-size: 16px;">
-      Gender
-    </ion-col>
-  </ion-row>
-  <ion-row style="width: 90%;margin: auto;">
-    <ion-col size="4" (click)="set('4')">
-      <div [ngClass]="(iid=='4')?'activg':'gender'">
-        <ion-icon name="male-outline"></ion-icon> Male
-      </div>
-    </ion-col>
-    <ion-col size="4" (click)="set('5')">
-      <div [ngClass]="(iid=='5')?'activg':'gender'">
-        <ion-icon name="female-outline"></ion-icon> Female
-      </div>
-    </ion-col>
-    <ion-col size="4" (click)="set('6')">
-      <div [ngClass]="(iid=='6')?'activg':'gender'">
-        <ion-icon name="male-female-outline"></ion-icon>
-        Others
-      </div>
-    </ion-col>
-  </ion-row>
+  </ion-row> 
   <div class="ht_5"></div>
   <ion-row style="width: 90%;margin: auto;">
     <ion-col size="12" style="margin: auto;color: gray;font-size: 16px;">

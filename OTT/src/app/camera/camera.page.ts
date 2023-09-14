@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Plugins } from '@capacitor/core';
 import { NavController } from '@ionic/angular';
+import { Plugins } from '@capacitor/core';
 import { VideoRecorderCamera, VideoRecorderPreviewFrame } from '@teamhive/capacitor-video-recorder';
+import { ZBarOptions, ZBar } from '@ionic-native/zbar/ngx';
 
 @Component({
   selector: 'camera',
@@ -10,19 +11,37 @@ import { VideoRecorderCamera, VideoRecorderPreviewFrame } from '@teamhive/capaci
 })
 export class CameraPage implements OnInit {
 
-  constructor(public navctrl: NavController) { }
+  constructor(public navctrl: NavController, private zbarPlugin: ZBar) {
+    this.optionZbar = {
+      flash: 'off',
+      drawSight: false
+    }
+  }
+  optionZbar: any;
+  scannedOutput: any;
 
 
 
- async ngOnInit() {
+  barcodeScanner() {
+    this.zbarPlugin.scan(this.optionZbar)
+      .then(respone => {
+        console.log(respone);
+        this.scannedOutput = respone;
+      })
+      .catch(error => {
+        alert(error);
+      });
+  }
+
+  async ngOnInit() {
     const { VideoRecorder } = Plugins;
     const config: VideoRecorderPreviewFrame = {
       id: 'video-record',
-      stackPosition: 'front', // 'front' overlays your app', 'back' places behind your app.
+      stackPosition: 'back', // 'front' overlays your app', 'back' places behind your app.
       width: 'fill',
       height: 'fill',
       x: 0,
-      y: 0,
+      y: 85,
       borderRadius: 0
     };
     await VideoRecorder.initialize({
@@ -30,24 +49,53 @@ export class CameraPage implements OnInit {
       previewFrames: [config]
     });
   };
+  record() {
+    const { VideoRecorder } = Plugins;
+    VideoRecorder.startRecording();
+  }
+ async stop() {
+    const { VideoRecorder } = Plugins;
 
-  back(){
+    const res = await VideoRecorder.stopRecording();
+    // The video url is the local file path location of the video output.
+   VideoRecorder.destroy();
+
+    return res.videoUrl;
+  }
+
+
+  back() {
+    const { VideoRecorder } = Plugins;
+    VideoRecorder.destroy();
+
     this.navctrl.pop()
   }
 
-  home(){
+  home() {
+    const { VideoRecorder } = Plugins;
+    VideoRecorder.destroy();
+
     this.navctrl.navigateForward('/home')
   }
 
-  download(){
+  download() {
+    const { VideoRecorder } = Plugins;
+    VideoRecorder.destroy();
+
     this.navctrl.navigateForward('/download')
   }
 
-  upcome(){
+  upcome() {
+    const { VideoRecorder } = Plugins;
+    VideoRecorder.destroy();
+
     this.navctrl.navigateForward('/upcoming')
   }
 
-  profile(){
+  profile() {
+    const { VideoRecorder } = Plugins;
+    VideoRecorder.destroy();
+
     this.navctrl.navigateForward('/profile')
   }
 
