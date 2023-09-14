@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { Plugins } from '@capacitor/core';
 import { VideoRecorderCamera, VideoRecorderPreviewFrame } from '@teamhive/capacitor-video-recorder';
-import { ZBarOptions, ZBar } from '@ionic-native/zbar/ngx';
 
 @Component({
   selector: 'camera',
@@ -11,11 +10,7 @@ import { ZBarOptions, ZBar } from '@ionic-native/zbar/ngx';
 })
 export class CameraPage implements OnInit {
 
-  constructor(public navctrl: NavController, private zbarPlugin: ZBar) {
-    this.optionZbar = {
-      flash: 'off',
-      drawSight: false
-    }
+  constructor(public navctrl: NavController,) {
   }
   optionZbar: any;
   scannedOutput: any;
@@ -23,14 +18,7 @@ export class CameraPage implements OnInit {
 
 
   barcodeScanner() {
-    this.zbarPlugin.scan(this.optionZbar)
-      .then(respone => {
-        console.log(respone);
-        this.scannedOutput = respone;
-      })
-      .catch(error => {
-        alert(error);
-      });
+    
   }
 
   async ngOnInit() {

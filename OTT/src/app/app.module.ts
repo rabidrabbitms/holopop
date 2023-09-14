@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { IonicNativePlugin}  from '@ionic-native/core'
-import { ZBar } from '@ionic-native/zbar/ngx';
 
 
 
@@ -23,7 +22,6 @@ import { ZBar } from '@ionic-native/zbar/ngx';
     AppRoutingModule
   ],
   providers: [
-    ZBar,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
   bootstrap: [AppComponent],

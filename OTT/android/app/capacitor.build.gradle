@@ -12,6 +12,7 @@ dependencies {
     implementation project(':capacitor-filesystem')
     implementation project(':capacitor-preferences')
     implementation project(':capacitor-splash-screen')
+    implementation project(':deva-community-capacitor-camera-pro')
     implementation "androidx.core:core:1.6.+"
     implementation "androidx.webkit:webkit:1.4.0"
 }
